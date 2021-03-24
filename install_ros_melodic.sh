@@ -13,6 +13,9 @@ echo "PRESS [ENTER] TO CONTINUE THE INSTALLATION"
 echo "IF YOU WANT TO CANCEL, PRESS [CTRL] + [C]"
 read
 
+echo "[Set archive address]"
+sudo sed -i 's/us.archive.ubuntu.com/kr.archive.ubuntu.com/g' /etc/apt/sources.list
+
 echo "[Set the target OS, ROS version and name of catkin workspace]"
 name_os_version=${name_os_version:="bionic"}
 name_ros_version=${name_ros_version:="melodic"}
