@@ -2,15 +2,16 @@
 # Apache License 2.0
 # Copyright (c) 2017, ROBOTIS CO., LTD.
 
-echo ""
-echo "Edited by kemjensak for ROS melodic"
-echo ""
+
 echo "[Note] Target OS version  >>> Ubuntu 18.04.x "
 echo "[Note] Target ROS version >>> ROS Melodic"
 echo "[Note] Catkin workspace   >>> $HOME/catkin_ws"
 echo ""
 echo "PRESS [ENTER] TO CONTINUE THE INSTALLATION"
 echo "IF YOU WANT TO CANCEL, PRESS [CTRL] + [C]"
+echo ""
+echo "Edited by KimJinSeok for ROS melodic"
+echo ""
 read
 
 echo "[Set archive address]"
