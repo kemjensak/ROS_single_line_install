@@ -57,7 +57,7 @@ echo "[Install the ros-desktop-full and all rqt plugins]"
 sudo apt-get install -y ros-$name_ros_version-desktop-full ros-$name_ros_version-rqt-*
 
 echo "[Initialize rosdep]"
-sudo sh -c "rosdep init"
+sudo rosdep init
 rosdep update
 
 echo "[Environment setup and getting rosinstall]"
