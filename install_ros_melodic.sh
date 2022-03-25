@@ -66,6 +66,8 @@ source /opt/ros/$name_ros_version/setup.sh
 sudo apt-get install -y python-rosinstall git python-rosdep python-rosinstall-generator python-wstool build-essential terminator python3-pip python3-yaml
 sudo pip3 install rospkg catkin_pkg
 timedatectl set-local-rtc 1
+sudo usermod -a -G dialout $USER
+sudo usermod -a -G tty $USER
 
 echo "[Make the catkin workspace and test the catkin_make]"
 mkdir -p $HOME/$name_catkin_workspace/src
