@@ -7,5 +7,6 @@
 - install ros melodic.
 - install terminator.
 - install packages to use ros on python3.
+- set permission to use serial devices.
 - set stored time as local time. (resolve time sync problem with windows)
 - change default package download server from US to KR.
