@@ -51,7 +51,7 @@ sh -c "echo \"source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash\
 sh -c "echo \"source /usr/share/vcstool-completion/vcs.bash\" >> ~/.bashrc"
 sh -c "echo \"source /usr/share/colcon_cd/function/colcon_cd.sh\" >> ~/.bashrc"
 
-sh -c "echo \"export _colcon_cd_root=~/robot_ws\" >> ~/.bashrc"
+sh -c "echo \"export _colcon_cd_root=~/colcon_ws\" >> ~/.bashrc"
 sh -c "echo \"export ROS_DOMAIN_ID=0\" >> ~/.bashrc"
 
 sh -c "echo \"alias eb='nano ~/.bashrc'\" >> ~/.bashrc"
