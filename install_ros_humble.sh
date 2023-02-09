@@ -64,9 +64,8 @@ sh -c "echo \"alias rd='rosdep install --from-paths src --ignore-src -r -y'\" >>
 sh -c "echo \"alias cw='cd ~/colcon_ws'\" >> ~/.bashrc"
 sh -c "echo \"alias cs='cd ~/colcon_ws/src'\" >> ~/.bashrc"
 
-
-
 source $HOME/.bashrc
 
 echo "[Complete!!!]"
+echo "Please open new terminal or type "source ~/.bashrc" to do further"
 exit 0

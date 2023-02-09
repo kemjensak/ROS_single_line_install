@@ -94,4 +94,5 @@ sh -c "echo \"export ROS_HOSTNAME=localhost\" >> ~/.bashrc"
 source $HOME/.bashrc
 
 echo "[Complete!!!]"
+echo "Please open new terminal or type "source ~/.bashrc" to do further"
 exit 0
