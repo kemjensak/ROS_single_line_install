@@ -15,7 +15,7 @@ sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 sudo apt install software-properties-common -y
-sudo add-apt-repository universe
+sudo add-apt-repository universe -y
 sudo apt update -y
 sudo apt install curl -y
 sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
@@ -26,6 +26,7 @@ sudo apt update -y
 sudo apt upgrade -y
 sudo apt install ros-humble-desktop-full -y
 sudo apt install ros-dev-tools -y
+sudo apt install ros-humble-rqt-* -y
 
 sudo apt install python3-vcstool
 
