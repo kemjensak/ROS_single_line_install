@@ -39,6 +39,7 @@ rosdep update
 
 sudo usermod -a -G dialout $USER
 sudo usermod -a -G tty $USER
+sudo ip link set lo multicast on
 
 mkdir -p $HOME/colcon_ws/src
 cd $HOME/colcon_ws
@@ -53,13 +54,12 @@ sh -c "echo \"source /usr/share/colcon_cd/function/colcon_cd.sh\" >> ~/.bashrc"
 
 sh -c "echo \"export _colcon_cd_root=~/colcon_ws\" >> ~/.bashrc"
 sh -c "echo \"export ROS_DOMAIN_ID=0\" >> ~/.bashrc"
-sh -c "# "ip link show lo" should print "MULTICAST" to use "ROS_LOCALHOST_ONLY". if not, enter "sudo ip link set lo multicast on""
-sh -c "# export ROS_LOCALHOST_ONLY=1"
+sh -c "echo \"export ROS_LOCALHOST_ONLY=1\" >> ~/.bashrc"
 
-sh -c "export RCUTILS_CONSOLE_OUTPUT_FORMAT='[{severity} {time}] [{name}]: {message} ({function_name}() at {file_name}:{line_number})'"
-sh -c "export RCUTILS_COLORIZED_OUTPUT=1"
-sh -c "export RCUTILS_LOGGING_USE_STDOUT=0"
-sh -c "export RCUTILS_LOGGING_BUFFERED_STREAM=1"
+sh -c "export RCUTILS_CONSOLE_OUTPUT_FORMAT='[{severity} {time}] [{name}]: {message} ({function_name}() at {file_name}:{line_number})'\" >> ~/.bashrc"
+sh -c "export RCUTILS_COLORIZED_OUTPUT=1\" >> ~/.bashrc"
+sh -c "export RCUTILS_LOGGING_USE_STDOUT=0\" >> ~/.bashrc"
+sh -c "export RCUTILS_LOGGING_BUFFERED_STREAM=1\" >> ~/.bashrc"
 
 sh -c "echo \"alias eb='nano ~/.bashrc'\" >> ~/.bashrc"
 sh -c "echo \"alias sb='source ~/.bashrc'\" >> ~/.bashrc"
