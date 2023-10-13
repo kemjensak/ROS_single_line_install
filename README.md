@@ -5,7 +5,12 @@
 ## ROS humble
 
     wget https://raw.githubusercontent.com/kemjensak/ROS_single_line_install/main/install_ros_humble.sh && sed -i -e 's/\r$//' install_ros_humble.sh && chmod 755 ./install_ros_humble.sh && bash ./install_ros_humble.sh
-    
+
+### This command will....
+- install ros humble.
+- set stored time as local time. (resolve time sync problem with windows)
+- set permission to use serial devices.
+- various options about ROS2 arguments
     
     
 ## ROS melodic
