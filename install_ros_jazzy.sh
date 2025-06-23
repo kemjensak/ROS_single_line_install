@@ -55,7 +55,7 @@ sh -c "echo \"source /usr/share/colcon_cd/function/colcon_cd.sh\" >> ~/.bashrc"
 
 sh -c "echo \"export _colcon_cd_root=~/colcon_ws\" >> ~/.bashrc"
 sh -c "echo \"export ROS_DOMAIN_ID=0\" >> ~/.bashrc"
-# sh -c "echo \"export ROS_LOCALHOST_ONLY=1\" >> ~/.bashrc"
+sh -c "echo \"export ROS_AUTOMATIC_DISCOVERY_RANGE=LOCALHOST\" >> ~/.bashrc"
 
 sh -c "echo \"export RCUTILS_CONSOLE_OUTPUT_FORMAT='[{severity} {time}] [{name}]: {message} ({function_name}() at {file_name}:{line_number})'\" >> ~/.bashrc"
 sh -c "echo \"export RCUTILS_COLORIZED_OUTPUT=1\" >> ~/.bashrc"
